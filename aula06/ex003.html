@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa...</title> 
+    <style> /* Comentário em CSS*/
+        body {
+            background-color: #b285dd;
+            color: #ffffff;
+            font: 25pt Arial;
+            text-align: center;
+        }
+        h1 {
+            color:#dfdc32;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Óla, Mundo!</h1> <!--Comentário em HTML-->
+
+    <p>Já me livrei da maldição!</p> 
+
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')); //string Number.ParseInt transforma em número inteiro
+        var n2 = Number.parseFloat(window.prompt('Digite outro número Real: ')); //string Number.parseFloat transforma em número real Trabalha com virgula
+        var n3 = Number(window.prompt('Digite outro número Real ou Inteiro: ')); //string Number transforma em número real ou inteiro
+        var s = n1 + n2 + n3; //Number transforma em Real e Inteiro
+        window.alert(`A soma entre ${n1} e ${n2} e ${n3} é igual a ${s}`); //Concatenação
+        // number + number para adição
+        // string + string para concatenação
+    </script>
+</body>
+</html>

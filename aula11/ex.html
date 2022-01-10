@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Aula 11 JS</title>
+
+<style>
+     body {
+         font: Normal 1rem Arial;
+         text-align: center;
+     }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Exercício Aula 11 JS</h1>
+    </header>
+
+    <label for="Pais">Selecione o Pais: </label>
+<select id="Pais">
+  <option value="">--Faça uma escolha--</option>
+  <option value="Brasil">Brasil</option>
+  <option value="Eua">Eua</option>
+  <option value="Canada">Canadá</option>
+  <option value="Espanha">Espanha</option>
+</select>
+
+<p></p>
+
+<script>
+
+var select = document.querySelector('select');
+var para = document.querySelector('p');
+
+select.addEventListener('change', setPais);
+
+function setPais() {
+  var escolha = select.value;
+
+  if (escolha === 'Brasil') {
+    para.textContent = 'Nascidos no Brasil "brasileiro."';
+  } else if (escolha === 'Eua') {
+    para.textContent = 'Nascidos no EUA "Americanos."';
+  } else if (escolha === 'Canada') {
+    para.textContent = 'Nascidos no Canadá "Canadense."';
+  } else if (escolha === 'Espanha') {
+    para.textContent = 'Nascidos na Espanha "Espanhol."';
+  } else {
+    para.textContent = '';
+  }
+}
+
+
+</script>
+</body>
+</html>
